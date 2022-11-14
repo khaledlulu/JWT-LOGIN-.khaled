@@ -31,7 +31,7 @@ app.post('/creat',verifyToken,(req,res)=>{
 
 app.post('/login',(req,res)=>{
     let user={
-        
+
       
         id:2,
         userName:'waleed',
@@ -61,7 +61,7 @@ function verifyToken(req,res,next){
         // set the token
         req.token = token
     }else{
-        res.sendStatus(403)
+        res.sendStatus(404)
     }
     next()
 }
