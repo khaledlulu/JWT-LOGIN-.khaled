@@ -31,13 +31,11 @@ app.post('/creat',verifyToken,(req,res)=>{
 
 app.post('/login',(req,res)=>{
     let user={
-        // id:1,
-        // userName:'khaled',
-        // password:'kh12345',
-
+        
+      
         id:2,
         userName:'waleed',
-        password :'2855131',
+        password :'pass55131',
     }
 
     jwt.sign({user},secret,{expiresIn:'1h'},(err,token)=>{
